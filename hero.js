@@ -4,6 +4,7 @@ class Hero
 	{
 		var options = 
         {
+			
             density: 1,
             frictionAir: 1
         }
@@ -23,7 +24,8 @@ class Hero
 			push()
 			translate(heroPos.x, heroPos.y);
             imageMode(CENTER);
-			ellipse(0,0,this.r,this.r)
+			image(this.image,0,0,this.r+150,this.r)
+			//ellipse(0,0,this.r,this.r)
 			pop()
 			
 	}
